@@ -9,7 +9,7 @@
       </p>
       {{#unless currentUser}}
         <p>
-          <a href="{{ pathFor 'members'}}" class="btn btn-primary btn-lg" data-login-with="meetup"><img src="/meetup.png" width=26 height=26> Join Us!</a>
+          <a href="{{ pathFor 'members'}}" class="btn btn-primary btn-lg" data-login-with="meetup"><img src="/meetup.png" width=26 height=26> Приєднуйтесь до нас!</a>
         </p>
       {{/unless}}
     </div>
@@ -21,7 +21,7 @@
     {{#each upcomingMeetup}}
       <div class="homepage-section homepage-section-meetups">
         <div class="container">
-          <h3>Next Meetup</h3>
+          <h3>Наступна зустріч</h3>
           <hr>
           <div class="row">
             <div class="col-sm-3">
@@ -47,7 +47,7 @@
                 {{ truncate description 140 }}
               </p>
               <p>
-                <a href="{{ pathFor 'meetupDetail' }}" class="btn btn-primary btn-lg">View Details</a>
+                <a href="{{ pathFor 'meetupDetail' }}" class="btn btn-primary btn-lg">Переглянути деталі</a>
               </p>
             </div>
           </div>
@@ -58,14 +58,14 @@
 
   <div class="homepage-section homepage-section-members">
     <div class="container">
-      <h3>Who We Are</h3>
+      <h3>Хто ми</h3>
       <hr>
       <p>
 		  {{> _topMembers}}
       </p>
       <hr>
       <p>
-        <a href="{{ pathFor 'members' }}" class="btn btn-default btn-lg">View All Members</a>
+        <a href="{{ pathFor 'members' }}" class="btn btn-default btn-lg">Переглянути всіх учасників</a>
       </p>
     </div>
   </div>
@@ -73,7 +73,7 @@
   {{#if sponsors}}
     <div class="homepage-section homepage-section-sponsors">
       <div class="container">
-        <h3>Our Friends and Sponsors</h3>
+        <h3>Наші друзі та спонсори</h3>
         <div class="row">
           {{#each sponsors}}
             <div class="col-sm-4">

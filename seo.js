@@ -1,7 +1,7 @@
 Meteor.startup(function() {
   if(Meteor.isClient) {
     SEO.config({
-      title: 'Meteor Vegas',
+      title: 'Meteor Kyiv',
       meta: {
         'description': 'Зустріч ентузіастів Meteor.js у Києві, Україна'
       },

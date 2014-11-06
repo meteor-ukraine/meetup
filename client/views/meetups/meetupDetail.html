@@ -40,7 +40,7 @@
                 <a href="{{ pathFor 'memberDetail' }}" title="{{ profile.name }}" data-toggle="tooltip"><img class="img-circle" width=30 height=30 src="{{profile.thumbnailUrl}}"></a>
               {{/each}}
               {{#if displayOverflowAttendees}}
-                <small>and {{ meetup.numberOfOverflowAttendees }} more are going</small>
+                <small>і ще {{ meetup.numberOfOverflowAttendees }}</small>
               {{/if}}
             </p>
           {{/unless}}
@@ -51,16 +51,16 @@
 
   <div class="container">
     <ol class="breadcrumb">
-      <li><a href="{{ pathFor 'meetups' }}">All Meetups</a></li>
+      <li><a href="{{ pathFor 'meetups' }}">Всі зустрічі (Meetups)</a></li>
       <li class="active">{{ meetup.title }}</li>
     </ol>
   </div>
 
   <div class="container">
     {{#if isInRole 'admin'}}
-      <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#add-topic-modal">Add Topic</button>
+      <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#add-topic-modal">Додати обговорення</button>
     {{/if}}
-    <h3>Topics</h3>
+    <h3>Теми</h3>
 
     {{#if meetup.topics.count}}
       {{#each meetup.topics}}
@@ -75,17 +75,17 @@
               <a href="{{ pathFor 'topicDetail' }}">{{ title }}</a>
             </h4>
             {{#with presenter}}
-              <h5 class="text-muted">Presented by <a href="{{ pathFor 'memberDetail' }}">{{ profile.name }}</a></h5>
+              <h5 class="text-muted">Презентовано: <a href="{{ pathFor 'memberDetail' }}">{{ profile.name }}</a></h5>
             {{/with}}
             <p>
               {{ description }}
             </p>
             <ul class="list-inline text-muted">
               {{#with author}}
-                <li><a href="{{ pathFor 'memberDetail' }}">Suggested by {{profile.name}}</a></li>
+                <li><a href="{{ pathFor 'memberDetail' }}">Запропоновано: {{profile.name}}</a></li>
               {{/with}}
               {{#if numberOfComments}}
-                <li><a href="{{ pathFor 'topicDetail' }}">{{numberOfComments}} Comments</a></li>
+                <li><a href="{{ pathFor 'topicDetail' }}">{{numberOfComments}} коментарів</a></li>
               {{/if}}
             </ul>
           </div>
