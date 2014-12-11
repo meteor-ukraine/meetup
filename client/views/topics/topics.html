@@ -6,14 +6,14 @@
       <div class="col-md-10 col-md-push-1">
         <div class="page-header">
           <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#new-topic-modal">
-            <i class="ion-plus"></i> Suggest a Topic
+            <i class="ion-plus"></i> Запропонувати тему
           </button>
-          <h1>Topics</h1>
+          <h1>Теми</h1>
         </div>
 
         <ul class="nav nav-tabs">
-          <li class="{{ activeTabClass 'suggested' }}"><a href="{{ pathFor 'topics' query='tab=suggested'}}">Suggested</a></li>
-          <li class="{{ activeTabClass 'presented' }}"><a href="{{ pathFor 'topics' query='tab=presented'}}">Presented</a></li>
+          <li class="{{ activeTabClass 'suggested' }}"><a href="{{ pathFor 'topics' query='tab=suggested'}}">Запропоновані</a></li>
+          <li class="{{ activeTabClass 'presented' }}"><a href="{{ pathFor 'topics' query='tab=presented'}}">Презентовані</a></li>
         </ul>
 
         <br>
@@ -22,15 +22,15 @@
           <div class="tab-pane {{ activeTabClass 'suggested' }}" id="suggested-topics">
             {{#if suggestedTopics.count}}
               <div class="well">
-                Suggest a topic for an upcoming meetup and vote on your favorites
+                Запропонуйте тему наступного мітапу і проголосуйте за ту, що вам сподобалась
               </div>
               {{#each suggestedTopics}}
                 {{> _topic}}
               {{/each}}
             {{else}}
               <div class="well">
-                There aren't any topics yet.
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new-topic-modal">Предлагайте тему?</button>
+                Ще немає ніяких тем.
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new-topic-modal">Пропонуйте тему?</button>
               </div>
             {{/if}}
           </div>
