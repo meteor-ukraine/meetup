@@ -14,6 +14,7 @@ boilerplate-generator@1.0.1
 callback-hook@1.0.1
 check@1.0.2
 chfritz:easycron@0.0.3
+chuangbo:marked@0.3.5
 cmather:handlebars-server@0.2.0
 coffeescript@1.0.4
 ctl-helper@1.0.4
@@ -24,6 +25,7 @@ deps@1.0.5
 ejson@1.0.4
 fastclick@1.0.1
 follower-livedata@1.0.2
+fortawesome:fontawesome@4.2.0_2
 geojson-utils@1.0.1
 handlebars@1.0.1
 html-tools@1.0.2
@@ -57,9 +59,9 @@ minifiers@1.1.2
 minimongo@1.0.5
 mobile-status-bar@1.0.1
 mongo@1.0.9
-mrt:iron-router-progress@0.9.3
 mrt:moment@2.8.1
 mrt:underscore-string-latest@2.3.3
+multiply:iron-router-progress@1.0.0
 npm-container@1.0.0
 oauth2@1.1.1
 oauth@1.1.2
@@ -85,4 +87,6 @@ url@1.0.2
 webapp-hashing@1.0.1
 webapp@1.1.4
 wizonesolutions:underscore-string@1.0.0
+xolvio:hljs@0.0.1
+xolvio:md-blog@0.2.6
 zimme:iron-router-active@1.0.1
